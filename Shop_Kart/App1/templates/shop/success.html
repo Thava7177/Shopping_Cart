@@ -1,0 +1,16 @@
+{% extends 'shop/layouts/main.html' %}
+
+{% block title %}
+Shop Kart | order
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <header>
+            <h1>Thank You for Your Order!</h1>
+        </header>
+            <p>Your order has been successfully placed.</p>
+            <p>Order Number: {{ order.id }}</p>
+            <p>We've sent a confirmation email to {{ order.email }} with the details of your order.</p>
+            
+{% endblock content %}
